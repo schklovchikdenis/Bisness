@@ -16,9 +16,9 @@ if(isMobile.iOS()){
 	var act="touchstart";
 }
 
-$('.header-menu__icon').click(function(event) {
+$('.menu-header__icon').click(function(event) {
 	$(this).toggleClass('active');
-	$('.header-menu').toggleClass('active');
+	$('.menu-header__menu').toggleClass('active');
 	if($(this).hasClass('active')){
 		$('body').data('scroll',$(window).scrollTop());
 	}

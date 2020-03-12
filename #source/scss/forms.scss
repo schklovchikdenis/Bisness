@@ -27,8 +27,28 @@
   font-weight: 700;
   letter-spacing: 1px;
   text-transform: uppercase;
-  margin: 40px 0px 0px 0px;
-  &.fw {
+  position: relative;
+  &:after{
+    content: '';
+    top: 0px;
+    width: 0;
+    height: 100%;
+    left: 50%;
+    position: absolute;
+    @include anim(0.8s,0s);
+    background-color: #00526b;
+  }
+  span{
+    position: relative;
+    z-index: 2;
+  }
+  &:hover{
+    &:after{
+      left: 0;
+      width: 100%;
+    }
+  }
+    &.fw {
     width: 100%;
   }
 }
