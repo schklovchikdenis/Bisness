@@ -28,28 +28,35 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
-  &:after{
-    content: '';
+  &:after {
+    content: "";
     top: 0px;
     width: 0;
     height: 100%;
     left: 50%;
     position: absolute;
-    @include anim(0.8s,0s);
+    @include anim(0.8s, 0s);
     background-color: #00526b;
   }
-  span{
+  span {
     position: relative;
     z-index: 2;
   }
-  &:hover{
-    &:after{
+  &:hover {
+    &:after {
       left: 0;
       width: 100%;
     }
   }
-    &.fw {
+  &.fw {
     width: 100%;
+  }
+  @media (max-width: $md3+px) {
+    @include flexbox();
+    justify-content: center;
+    align-items: center;
+    line-height: 18px;
+    font-size: 14px;
   }
 }
 //</BUTTONS>====================================================================================================
