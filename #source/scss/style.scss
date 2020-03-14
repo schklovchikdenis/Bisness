@@ -451,6 +451,10 @@ h6 {
    letter-spacing: 1px;
    line-height: 48px;
    text-transform: uppercase;
+   @media (max-width: $md3+px) {
+      font-size: 25px;
+      line-height: 33px;
+   }
 }
 //<ОБОЛОЧКА>===========================================================================================================
 .wrapper {
@@ -587,10 +591,33 @@ h6 {
 }
 
 .investor {
+   margin: 0px 0px 100px 0px;
+      @media (max-width:$md2+px){
+         margin: 0px 0px 60px 0px;
+      }
+      @media (max-width:$md3+px){
+         margin: 0px 0px 50px 0px;
+      }
    &__title {
+      margin: 0px 0px 40px 0px;
+      @media (max-width: $md3+px) {
+         margin: 0px 0px 30px 0px;
+      }
    }
 
    &__text {
+      color: #646667;
+      font-family: "Montserrat Light";
+      font-size: 20px;
+      font-weight: 300;
+      line-height: 36px;
+      max-width: 670px;
+      margin: 0px 0px 48px 0px;
+      @media (max-width: $md3+px) {
+         font-size: 16px;
+         line-height: 24px;
+         margin: 0px 0px 20px 0px;
+      }
    }
 
    &__stat {
@@ -601,17 +628,52 @@ h6 {
 }
 
 .stat-investor {
+   @include flexbox();
+   justify-content: space-between;
+   margin: 0px 0px 30px 0px;
+
    &__column {
+      flex: 0 1 auto;
+      padding: 0px 5px;
+      margin: 0px 0px 25px 0px;
+      @media (max-width: $md3+px) {
+         flex: 0 0 33.333%;
+      }
+      @media (max-width: $md4+px) {
+         flex: 0 0 50%;
+      }
    }
 
    &__item {
    }
+   @media (max-width: $md3+px) {
+      margin: 0px 5px 0px 5px;
+      flex-wrap: wrap;
+      justify-content: center;
+   }
 }
 .item-stat {
+   text-align: center;
    &__value {
+      color: #007397;
+      font-family: "PT Serif";
+      font-size: 54px;
+      text-transform: uppercase;
+      margin: 0px 0px 7px 0px;
+      @media (max-width: $md2+px) {
+         font-size: 40px;
+         margin: 0px 0px 5px 0px;
+      }
    }
 
    &__text {
+      color: #aec3d4;
+      font-size: 16px;
+      line-height: 32px;
+      @media (max-width: $md2+px) {
+         font-size: 14px;
+         line-height: 20px;
+      }
    }
 }
 

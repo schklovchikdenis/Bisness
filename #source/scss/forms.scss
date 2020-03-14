@@ -28,6 +28,8 @@
   letter-spacing: 1px;
   text-transform: uppercase;
   position: relative;
+  text-align: center;  
+  min-width: 270px;
   &:after {
     content: "";
     top: 0px;
