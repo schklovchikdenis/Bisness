@@ -15,7 +15,7 @@ $('.wrapper').addClass('loaded');
 if(isMobile.iOS()){
 	var act="touchstart";
 }
-
+// Mobile menu 
 $('.menu-header__icon').click(function(event) {
 	$(this).toggleClass('active');
 	$('.menu-header__menu').toggleClass('active');
@@ -152,7 +152,7 @@ $(window).scroll(function() {
 $('#up').click(function(event) {
 	$('body,html').animate({scrollTop:0},300);
 });
-
+// Tabs
 $('body').on('click','.tab__navitem',function(event) {
 			var eq=$(this).index();
 		if($(this).hasClass('parent')){
@@ -167,6 +167,7 @@ $('body').on('click','.tab__navitem',function(event) {
 		}
 	}
 });
+
 $.each($('.spoller.active'), function(index, val) {
 	$(this).next().show();
 });
@@ -279,10 +280,10 @@ function tip(){
 }
 
 // Плавный скролл по якорям по странице
-$('a[href*="#"]').on('click', function (e) {
-	e.preventDefault();
+// $('a[href*="#"]').on('click', function (e) {
+// 	e.preventDefault();
 
-	$('html, body').animate({
-		scrollTop: $($(this).attr('href')).offset().top
-	}, 500, 'linear');
-});
+// 	$('html, body').animate({
+// 		scrollTop: $($(this).attr('href')).offset().top
+// 	}, 500, 'linear');
+// });
