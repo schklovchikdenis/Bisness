@@ -131,7 +131,7 @@ header {
       position: relative;
       &--earth {
          padding: 0px 42px 0px 0px;
-         background: url("/img/icons/earch.svg") right no-repeat;
+         background: url("../img/icons/earch.svg") right no-repeat;
          @media (max-width: $md2+px) {
             background-size: 20px;
             padding: 0px 25px 0px 0px;

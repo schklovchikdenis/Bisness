@@ -445,7 +445,7 @@ header {
   position: relative; }
   .menu-header__link--earth {
     padding: 0px 42px 0px 0px;
-    background: url("/img/icons/earch.svg") right no-repeat; }
+    background: url("../img/icons/earch.svg") right no-repeat; }
     @media (max-width: 992.98px) {
       .menu-header__link--earth {
         background-size: 20px;
